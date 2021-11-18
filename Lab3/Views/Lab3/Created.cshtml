@@ -1,0 +1,19 @@
+﻿
+
+@model Lab3.Models.FormModel
+@{ ViewData["Title"] = "Form-Created"; }
+
+
+<div class="text-left">
+    <h1 class="display-4">Dane z formularza</h1>
+   
+    @{
+        for (int i = 1; i <= Model.Repeats; i++) 
+        {
+            <p>@Model.Name</p>
+        }
+ }
+  
+</div>
+<p>Dziękujemy za wypełnienie formularza</p>
+
